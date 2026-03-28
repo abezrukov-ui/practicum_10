@@ -1,8 +1,11 @@
-def sms_message(message: str):
-
+def sms_message(message: str) -> str:
+    """
+    This function checks the length of an SMS message.
+    """
     if len(message) <= 160:
         return message
     else:
         return message[:160]
 
 print(sms_message("Х" * 200))
+
